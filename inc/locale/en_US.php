@@ -1,7 +1,10 @@
 <?php
-
 	require_once __DIR__ . '/../config/users.php';
 
+	/*	define('some_string',	*/
+	/*		'value');			*/
+	define('',
+		'');
 
 	define('MSG_EMAIL_TAKEN',
 		'That e-mail address is taken.');

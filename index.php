@@ -6,6 +6,8 @@
 
 	session_start();
 
+	require_once __DIR__ . '/inc/config/config.php';
+
 	require_once __DIR__ . '/inc/functions/database.php';
 	require_once __DIR__ . '/inc/functions/session.php';
 	require_once __DIR__ . '/inc/functions/pages.php';
@@ -13,7 +15,7 @@
 	require_once __DIR__ . '/inc/functions/menu.php';
 	require_once __DIR__ . '/inc/functions/misc.php';
 
-	require_once __DIR__ . '/inc/config/strings.php';
+	require_once __DIR__ . '/inc/locale/'.SELECTED_LOCALE.'.php';
 
 	$currentPage = getCurrentPage();
 

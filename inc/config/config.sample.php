@@ -1,5 +1,7 @@
 <?php
 
+	define('BRAND_NAME', 'minis'); // enter here favorite name of your social network
+	define('SELECTED_LOCALE', 'en_US'); // see locale folder
 	define('DB_DATABASE_TYPE', 'mariadb'); // supported drivers: mariadb, mysql, pgsql, sybase (dblib), mssql, sqlite
 	define('DB_SERVER', '127.0.0.1');
 	define('DB_USERNAME', 'root');
