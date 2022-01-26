@@ -1,5 +1,7 @@
 Copyright (c) 2018 Eric Kaiser
+
 Copyright (c) 2022 DartPower Team
+
 All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
