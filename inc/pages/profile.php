@@ -20,7 +20,7 @@
 		$user = getUser($userId);
 		if ($user === null)
 		{
-			renderErrorAlert(MSG_USER_DOESNT_EXIST);
+			renderErrorAlert(LC_MSG_USER_DOESNT_EXIST);
 			break;
 		}
 

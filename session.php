@@ -3,7 +3,6 @@
 	require_once __DIR__ . '/inc/functions/database.php';
 	require_once __DIR__ . '/inc/functions/session.php';
 
-
 	session_start();
 
 	$database = getDatabase();

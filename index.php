@@ -8,14 +8,14 @@
 
 	require_once __DIR__ . '/inc/config/config.php';
 
+	require_once __DIR__ . '/inc/locale/'.SELECTED_LOCALE.'.php';
+
 	require_once __DIR__ . '/inc/functions/database.php';
 	require_once __DIR__ . '/inc/functions/session.php';
 	require_once __DIR__ . '/inc/functions/pages.php';
 	require_once __DIR__ . '/inc/functions/templates.php';
 	require_once __DIR__ . '/inc/functions/menu.php';
 	require_once __DIR__ . '/inc/functions/misc.php';
-
-	require_once __DIR__ . '/inc/locale/'.SELECTED_LOCALE.'.php';
 
 	$currentPage = getCurrentPage();
 
@@ -51,7 +51,7 @@
 
 		<footer>
 			<p>
-				powered by <em><?= BRAND_NAME ?></em>.
+				<?=LC_STR_POWERED_BY ?><em><?=BRAND_NAME?></em>.
 			</p>
 		</footer>
 

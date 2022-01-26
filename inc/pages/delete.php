@@ -8,7 +8,7 @@
 	{
 		if (!isset($_GET['message']) || !is_int($_GET['message'] * 1))
 		{
-			renderErrorAlert(MSG_MESSAGE_DOESNT_EXIST);
+			renderErrorAlert(LC_MSG_MESSAGE_DOESNT_EXIST);
 			break;
 		}
 		$messageId = $_GET['message'] * 1;
@@ -17,13 +17,13 @@
 
 		if ($message === null)
 		{
-			renderErrorAlert(MSG_MESSAGE_DOESNT_EXIST);
+			renderErrorAlert(LC_MSG_MESSAGE_DOESNT_EXIST);
 			break;
 		}
 
 		if ((int)$message['author_id'] !== $_SESSION['userId'])
 		{
-			renderErrorAlert(MSG_NOT_YOUR_MESSAGE);
+			renderErrorAlert(LC_MSG_NOT_YOUR_MESSAGE);
 			break;
 		}
 
@@ -33,7 +33,7 @@
 		{
 			if (!isCsrfTokenCorrect(getFieldValue('token')))
 			{
-				renderErrorAlert(MSG_BAD_TOKEN);
+				renderErrorAlert(LC_MSG_BAD_TOKEN);
 				break;
 			}
 			if (deleteMessage($messageId))

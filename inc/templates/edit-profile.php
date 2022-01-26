@@ -3,19 +3,19 @@
 		<legend>Personal info</legend>
 		<table>
 			<tr>
-				<td><label for="first-name">First name:</label></td>
+				<td><label for="first-name"><?=LC_STR_FIRST_NAME?></label></td>
 				<td>
 					<input type="text" id="first-name" name="first-name" value="<?= $firstName ?>" />
 				</td>
 			</tr>
 			<tr>
-				<td><label for="last-name">Last name:</label></td>
+				<td><label for="last-name"><?=LC_STR_LAST_NAME?></label></td>
 				<td>
 					<input type="text" id="last-name" name="last-name" value="<?= $lastName ?>" />
 				</td>
 			</tr>
 			<tr>
-				<td><label for="email">E-Mail address:</label></td>
+				<td><label for="email"><?=LC_STR_EMAIL?>></label></td>
 				<td>
 					<input type="email" id="email" name="email" value="<?= $email ?>" />
 					<label class="checkbox spaced">

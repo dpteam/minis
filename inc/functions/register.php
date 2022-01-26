@@ -3,38 +3,37 @@
 	require_once __DIR__ . '/../config/config.php';
 	require_once __DIR__ . '/../config/users.php';
 
-
 	function validateRegistrationForm()
 	{
 		$errorMessages = [];
 
 		if (trim(getFieldValue('email')) === '')
 		{
-			$errorMessages[] = MSG_EMAIL_MISSING;
+			$errorMessages[] = LC_MSG_EMAIL_MISSING;
 		}
 		if (emailExists(getFieldValue('email')))
 		{
-			$errorMessages[] = MSG_EMAIL_TAKEN;
+			$errorMessages[] = LC_MSG_EMAIL_TAKEN;
 		}
 		if (trim(getFieldValue('first-name')) === '')
 		{
-			$errorMessages[] = MSG_FIRST_NAME_MISSING;
+			$errorMessages[] = LC_MSG_FIRST_NAME_MISSING;
 		}
 		else if (!preg_match('/^' . VALID_USERNAME_REGEX . '$/', getFieldValue('first-name')))
 		{
-			$errorMessages[] = MSG_INVALID_FIRST_NAME;
+			$errorMessages[] = LC_MSG_INVALID_FIRST_NAME;
 		}
 		if (trim(getFieldValue('last-name')) === '')
 		{
-			$errorMessages[] = MSG_LAST_NAME_MISSING;
+			$errorMessages[] = LC_MSG_LAST_NAME_MISSING;
 		}
 		else if (!preg_match('/^' . VALID_USERNAME_REGEX . '$/', getFieldValue('last-name')))
 		{
-			$errorMessages[] = MSG_INVALID_LAST_NAME;
+			$errorMessages[] = LC_MSG_INVALID_LAST_NAME;
 		}
 		if (strlen(getFieldValue('password')) < MIN_PASSWORD_LENGTH)
 		{
-			$errorMessages[] = MSG_PASSWORD_TOO_SHORT;
+			$errorMessages[] = LC_MSG_PASSWORD_TOO_SHORT;
 		}
 
 		return $errorMessages;

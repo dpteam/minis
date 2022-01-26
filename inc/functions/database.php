@@ -20,7 +20,7 @@
 		}
 		catch (Exception $e)
 		{
-			echo 'Ошибка базы данных: ',  $e->getMessage(), "\n";
+			echo LC_ERROR_DBEXCEPTION,  $e->getMessage(), "\n";
 			die('');
 		}
 	}

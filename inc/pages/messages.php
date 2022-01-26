@@ -22,13 +22,13 @@
 
 			if (trim($messageContent) === '')
 			{
-				$messageErrors[] = MSG_NO_MESSAGE_CONTENT;
+				$messageErrors[] = LC_MSG_NO_MESSAGE_CONTENT;
 				break;
 			}
 
 			if (!isCsrfTokenCorrect(getFieldValue('token')))
 			{
-				$messageErrors[] = MSG_BAD_TOKEN;
+				$messageErrors[] = LC_MSG_BAD_TOKEN;
 				break;
 			}
 
@@ -65,13 +65,13 @@
 
 			if (trim($replyContent) === '')
 			{
-				$replyErrors[] = MSG_NO_MESSAGE_CONTENT;
+				$replyErrors[] = LC_MSG_NO_MESSAGE_CONTENT;
 				break;
 			}
 
 			if (!isCsrfTokenCorrect(getFieldValue('token')))
 			{
-				$replyErrors[] = MSG_BAD_TOKEN;
+				$replyErrors[] = LC_MSG_BAD_TOKEN;
 				break;
 			}
 

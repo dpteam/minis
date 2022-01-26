@@ -2,43 +2,43 @@
 	require_once __DIR__ . '/../config/users.php';
 
 	define('LC_STR_POWERED_BY',
-		'powered by ');
+		'Работает на ');
 
 	define('LC_STR_EDIT_PROFILE',
-		'Edit profile');
+		'Ред. профиль');
 
 	define('LC_ALT_AVATAR',
-		'Avatar');
+		'Аватар');
 
 	define('LC_STR_REGISTERED',
-		'Registered');
+		'Зарегистрирован');
 
 	define('LC_STR_LAST_ACTIVE',
-		'Last active');
+		'Посл. активность');
 
 	define('LC_CAPTION_HOME',
-		'Home');
+		'Домой');
 
 	define('LC_CAPTION_MESSAGES',
-		'Messages');
+		'Сообщения');
 
 	define('LC_CAPTION_MY_PROFILE',
-		'My profile');
+		'Мой профиль');
 
 	define('LC_CAPTION_LOGOUT',
-		'Log out');
+		'Выйти');
 
 	define('LC_ERROR_DBEXCEPTION',
-		'SQL DB Error Exception: ');
+		'Ошибка базы данных: ');
 
 	define('LC_STR_NO_MESSAGES',
-		'There aren\'t any messages yet.');
+		'Сообщений пока нет.');
 
 	define('LC_STR_WRITEMSG',
-		'Write a message');
+		'Написать сообщение');
 
 	define('LC_STR_WRITEMSG_PLACEHOLDER',
-		'Write a message&hellip;');
+		'Напишите сообщение&hellip;');
 
 	define('LC_MSG_EMAIL_TAKEN',
 		'That e-mail address is taken.');
@@ -96,13 +96,3 @@
 
 	define('LC_MSG_MESSAGE_DELETE_FAILURE',
 		'The message couldn\'t be deleted.');
-
-	define('LC_STR_FIRST_NAME',
-		'First name:');
-
-	define('LC_STR_LAST_NAME',
-		'Last name:');
-	
-	define('LC_STR_EMAIL',
-		'E-Mail address:');
-		

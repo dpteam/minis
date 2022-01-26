@@ -11,19 +11,19 @@
 	define('PAGES', [
 		'home'           => [
 			'name'    => 'home',
-			'caption' => 'Home',
+			'caption' => LC_CAPTION_HOME,
 			'inMenu'  => true
 		],
 		'messages'       => [
 			'name'      => 'messages',
-			'caption'   => 'Messages',
+			'caption'   => LC_CAPTION_MESSAGES,
 			'condition' => isLoggedIn(),
 			'inMenu'    => true,
 			'related'   => ['delete']
 		],
 		'profile'        => [
 			'name'      => 'profile',
-			'caption'   => 'My profile',
+			'caption'   => LC_CAPTION_MY_PROFILE,
 			'condition' => isLoggedIn(),
 			'inMenu'    => true,
 			'related'   => ['edit-profile']
@@ -31,7 +31,7 @@
 		'logout'         => [
 			'link'      => BASE_PATH . '/session.php?action=logout',
 			'name'      => 'logout',
-			'caption'   => 'Log out',
+			'caption'   => LC_CAPTION_LOGOUT,
 			'condition' => isLoggedIn(),
 			'inMenu'    => true
 		],

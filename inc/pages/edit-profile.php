@@ -47,34 +47,34 @@
 
 			if (!isCsrfTokenCorrect(getFieldValue('token')))
 			{
-				renderErrorAlert(MSG_BAD_TOKEN);
+				renderErrorAlert(LC_MSG_BAD_TOKEN);
 				$error = true;
 			}
 
 			if ($email === '')
 			{
-				renderErrorAlert(MSG_EMAIL_MISSING);
+				renderErrorAlert(LC_MSG_EMAIL_MISSING);
 				$error = true;
 			}
 
 			if (trim(getFieldValue('first-name')) === '')
 			{
-				renderErrorAlert(MSG_FIRST_NAME_MISSING);
+				renderErrorAlert(LC_MSG_FIRST_NAME_MISSING);
 				$error = true;
 			}
 			else if (!preg_match('/^' . VALID_USERNAME_REGEX . '$/', getFieldValue('first-name')))
 			{
-				renderErrorAlert(MSG_INVALID_FIRST_NAME);
+				renderErrorAlert(LC_MSG_INVALID_FIRST_NAME);
 				$error = true;
 			}
 			if (trim(getFieldValue('last-name')) === '')
 			{
-				renderErrorAlert(MSG_LAST_NAME_MISSING);
+				renderErrorAlert(LC_MSG_LAST_NAME_MISSING);
 				$error = true;
 			}
 			else if (!preg_match('/^' . VALID_USERNAME_REGEX . '$/', getFieldValue('last-name')))
 			{
-				renderErrorAlert(MSG_INVALID_LAST_NAME);
+				renderErrorAlert(LC_MSG_INVALID_LAST_NAME);
 				$error = true;
 			}
 
@@ -82,7 +82,7 @@
 			$changeEmail = (strtolower($oldEmail) !== strtolower($email));
 			if ($changeEmail && emailExists($email))
 			{
-				renderErrorAlert(MSG_EMAIL_TAKEN);
+				renderErrorAlert(LC_MSG_EMAIL_TAKEN);
 				$error = true;
 			}
 
@@ -91,17 +91,17 @@
 			{
 				if (!isPasswordCorrect($userId, $oldPassword))
 				{
-					renderErrorAlert(MSG_WRONG_PASSWORD);
+					renderErrorAlert(LC_MSG_WRONG_PASSWORD);
 					$error = true;
 				}
 				if (strlen($newPassword) < MIN_PASSWORD_LENGTH)
 				{
-					renderErrorAlert(MSG_PASSWORD_TOO_SHORT);
+					renderErrorAlert(LC_MSG_PASSWORD_TOO_SHORT);
 					$error = true;
 				}
 				if ($newPassword !== $newPasswordConfirm)
 				{
-					renderErrorAlert(MSG_PASSWORDS_DONT_MATCH);
+					renderErrorAlert(LC_MSG_PASSWORDS_DONT_MATCH);
 					$error = true;
 				}
 			}
@@ -143,7 +143,7 @@
 					updatePassword($userId, $newPassword);
 				}
 
-				renderSuccessAlert(MSG_EDIT_PROFILE_SUCCESS);
+				renderSuccessAlert(LC_MSG_EDIT_PROFILE_SUCCESS);
 			}
 		}
 

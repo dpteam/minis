@@ -26,7 +26,7 @@
 				|| $_FILES['avatar']['error'] !== UPLOAD_ERR_OK
 			)
 			{
-				$errorMessages[] = MSG_AVATAR_GENERAL_ERROR;
+				$errorMessages[] = LC_MSG_AVATAR_GENERAL_ERROR;
 				break;
 			}
 
@@ -39,7 +39,7 @@
 
 			if ($fileExtension === false)
 			{
-				$errorMessages[] = MSG_AVATAR_WRONG_FILE_FORMAT;
+				$errorMessages[] = LC_MSG_AVATAR_WRONG_FILE_FORMAT;
 				break;
 			}
 
@@ -48,7 +48,7 @@
 			$avatar = loadImage($filename, $fileExtension);
 			if ($avatar === null)
 			{
-				$errorMessages[] = MSG_AVATAR_WRONG_FILE_FORMAT;
+				$errorMessages[] = LC_MSG_AVATAR_WRONG_FILE_FORMAT;
 				break;
 			}
 

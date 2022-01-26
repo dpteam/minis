@@ -1,15 +1,15 @@
 <div class="narrow">
 
 	<?php if (empty($messages)): ?>
-		<em class="empty">There aren't any messages yet.</em>
+		<em class="empty"><?=LC_STR_NO_MESSAGES?></em>
 	<?php endif ?>
 
 	<form action="<?= BASE_PATH ?>/?p=messages" method="post">
 		<div class="message message-form main-message-form panel">
-			<a class="primary button visible-with-js" id="write-message">Write a message</a>
+			<a class="primary button visible-with-js" id="write-message"><?=LC_STR_WRITEMSG?></a>
 			<div id="message-form" <?= $messageError ? '' : 'class="hidden-with-js"' ?>>
 				<textarea id="content" name="content"
-				          placeholder="Write a message&hellip;"><?= $messageContent ?></textarea>
+				          placeholder="<?=LC_STR_WRITEMSG_PLACEHOLDER?>"><?= $messageContent ?></textarea>
 				<label class="checkbox">
 					<input type="checkbox" id="add-addressee"
 					       name="add-addressee" <?= $addAddressee ? 'checked="checked"' : '' ?> />

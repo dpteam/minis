@@ -2,8 +2,8 @@
 
 	<div class="column">
 		<div class="column-content">
-			<h1>minis</h1>
-			<p>a <em>simp</em>le <em>soc</em>ial <em>n</em>etwork</p>
+			<h1><?=BRAND_NAME?></h1>
+			<p><?=BRAND_SLOGAN?></p>
 			<p>Hello World! <em>minis</em> is a minimalist social network that exists for no reason in particular.</p>
 			<?php if (!$loggedIn): ?>
 				<form class="login-form" action="<?= BASE_PATH ?>/session.php?action=login" method="post">

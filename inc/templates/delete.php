@@ -1,10 +1,10 @@
 <div class="narrow">
 
 	<?php if ($success): ?>
-		<div class="alert success"><?= MSG_MESSAGE_DELETE_SUCCESS ?></div>
+		<div class="alert success"><?= LC_MSG_MESSAGE_DELETE_SUCCESS ?></div>
 		<a class="button" href="<?= BASE_PATH ?>/?p=messages">Back</a>
 	<?php elseif ($error): ?>
-		<div class="alert error"><?= MSG_MESSAGE_DELETE_FAILURE ?></div>
+		<div class="alert error"><?= LC_MSG_MESSAGE_DELETE_FAILURE ?></div>
 	<?php else: ?>
 
 		<p>Delete this message?</p>
