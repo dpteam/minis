@@ -1,6 +1,6 @@
 <?php
 
-	define('BASE_PATH', '/simpson');
+	define('BASE_PATH', ''); // enter a relative path for change base path
 
 	define('DEFAULT_PAGE_NAME', 'home');
 

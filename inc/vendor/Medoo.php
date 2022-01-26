@@ -214,7 +214,7 @@ class Medoo
 			$stack[] = is_int($key) ? $value : $key . '=' . $value;
 		}
 
-		$dsn = $driver . ':' . implode($stack, ';');
+		$dsn = $driver . ':' . implode(';', $stack);
 
 		if (
 			in_array($this->type, ['mariadb', 'mysql', 'pgsql', 'sybase', 'mssql']) &&

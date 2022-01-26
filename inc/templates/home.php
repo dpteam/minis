@@ -2,9 +2,9 @@
 
 	<div class="column">
 		<div class="column-content">
-			<h1>simpson</h1>
+			<h1>minis</h1>
 			<p>a <em>simp</em>le <em>soc</em>ial <em>n</em>etwork</p>
-			<p>Hello World! <em>simpson</em> is a minimalist social network that exists for no reason in particular.</p>
+			<p>Hello World! <em>minis</em> is a minimalist social network that exists for no reason in particular.</p>
 			<?php if (!$loggedIn): ?>
 				<form class="login-form" action="<?= BASE_PATH ?>/session.php?action=login" method="post">
 					<label><input type="email" name="email" placeholder="E-Mail" /></label>
@@ -119,7 +119,7 @@
 									<td colspan="2">
 										<?php if (empty($registrationErrorMessages)): ?>
 											<div class="alert success">
-												Welcome to <em>simpson</em>! You can log in now.
+												Welcome to <em>minis</em>! You can log in now.
 											</div>
 										<?php else: ?>
 											<div class="alert error">

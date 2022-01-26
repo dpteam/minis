@@ -15,11 +15,13 @@
 				'password'      => DB_PASSWORD,
 				'database_name' => DB_DATABASE_NAME,
 				'database_type' => DB_DATABASE_TYPE,
-				'charset'       => DB_CHARSET
+				'charset'       => DB_CHARSET,
+				'port'          => DB_PORT
 			]);
 		}
 		catch (Exception $e)
 		{
-			die('database error');
+			echo 'Ошибка базы данных: ',  $e->getMessage(), "\n";
+			die('');
 		}
 	}
