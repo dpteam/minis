@@ -817,7 +817,7 @@ class Medoo
 						}
 					}
 
-					$where_clause .= ' ORDER BY ' . implode($stack, ',');
+					$where_clause .= ' ORDER BY ' . implode(',', $stack);
 				}
 				elseif ($raw = $this->buildRaw($ORDER, $map))
 				{
