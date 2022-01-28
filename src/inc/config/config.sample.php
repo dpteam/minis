@@ -1,5 +1,5 @@
 <?php
-
+	define('BASE_PATH', ''); // enter a relative path for change base path
 	define('BRAND_NAME', 'minis'); // enter here favorite name of your social network
 	define('BRAND_SLOGAN', "a <em>simp</em>le <em>soc</em>ial <em>n</em>etwork");
 	define('SELECTED_LOCALE', 'en_US'); // see locale folder
