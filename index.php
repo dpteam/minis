@@ -27,12 +27,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title><?= BRAND_NAME ?></title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,700" />
-		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/user.css" />
-		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/messages.css" />
-		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/form.css" />
-		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/mobile.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:300,300i,700" />
+		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/98.css" />
+		<link rel="stylesheet" type="text/css" href="<?= BASE_PATH ?>/css/<?=SELECTED_THEME?>.css" />
 	</head>
 	<body>
 

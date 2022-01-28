@@ -486,7 +486,7 @@ class Medoo
 			}
 		}
 
-		return implode($stack, ',');
+		return implode(',', $stack);
 	}
 
 	protected function arrayQuote($array)
@@ -946,7 +946,7 @@ class Medoo
 								$this->tableQuote(isset($match[ 'alias' ]) ? $match[ 'alias' ] : $match[ 'table' ]) . '."' . $value . '"';
 							}
 
-							$relation = 'ON ' . implode($joins, ' AND ');
+							$relation = 'ON ' . implode(' AND ', $joins);
 						}
 					}
 
@@ -961,7 +961,7 @@ class Medoo
 				}
 			}
 
-			$table_query .= ' ' . implode($table_join, ' ');
+			$table_query .= ' ' . implode(' ', $table_join);
 		}
 		else
 		{

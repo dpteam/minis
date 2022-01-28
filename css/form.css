@@ -32,7 +32,7 @@ textarea {
     border: 1px solid #aaa;
     border-radius: 2px;
     padding: 0.5rem 0.8rem;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Play', sans-serif;
     font-size: 14px;
 }
 
@@ -74,7 +74,7 @@ button,
     border-radius: 2px;
     background-color: #ddd;
     padding: 0.5rem 1rem;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Play', sans-serif;
     cursor: pointer;
     color: #222;
     text-decoration: none;
