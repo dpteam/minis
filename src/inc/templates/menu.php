@@ -1,6 +1,6 @@
 <nav>
 	<ul>
-		<li><span class="title"><?= BRAND_NAME ?></span></li>
+		<li><span class="title"><?=BRAND_TITLE_EMOJI?><?=BRAND_NAME?></span></li>
 		<?php foreach ($menuItems as $menuItem): ?>
 			<?php if ($menuItem['condition'] ?? true): ?>
 				<li<?= $menuItem['active'] ? ' class="active"' : '' ?>>

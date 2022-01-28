@@ -1,3 +1,5 @@
 .idea
 /src/inc/config/config.php
+/src/img/avatars/*.png
+!/src/img/avatars/default.png
 /private/
